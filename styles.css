@@ -197,6 +197,29 @@ code {
   font-size: 0.95rem;
 }
 
+.trailer-grid {
+  display: grid;
+  gap: 1.75rem;
+}
+
+@media (min-width: 820px) {
+  .trailer-grid {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+}
+
+.trailer-item {
+  min-width: 0;
+}
+
+.trailer-label {
+  margin: 0 0 0.65rem;
+  font-size: 1.05rem;
+  color: var(--accent-hover);
+  font-weight: 600;
+}
+
 .trailer-wrap {
   position: relative;
   width: 100%;
@@ -208,7 +231,8 @@ code {
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
 }
 
-.trailer-wrap iframe {
+.trailer-wrap iframe,
+.trailer-wrap video {
   position: absolute;
   inset: 0;
   width: 100%;
@@ -216,8 +240,17 @@ code {
   border: 0;
 }
 
+.trailer-wrap video {
+  object-fit: contain;
+  background: #000;
+}
+
 #trailer .section-note {
-  margin: 1rem 0 0;
+  margin: 0.75rem 0 0;
+}
+
+#trailer .trailer-foot {
+  margin-top: 1.25rem;
 }
 
 .about-grid {

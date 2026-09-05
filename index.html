@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
   <title>Invasion of the Number Vegetables</title>
   <meta name="description" content="An adventure through puzzles, battles, and times tables. Coming soon to Steam.">
   <link rel="stylesheet" href="styles.css">
@@ -73,19 +74,39 @@
 
     <section id="trailer" class="section section-muted">
       <h2>Trailer</h2>
-      <div class="trailer-wrap">
-        <iframe
-          src="https://www.youtube.com/embed/swQ1hmRX5po"
-          title="Invasion of the Number Vegetables trailer"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-          loading="lazy"
-        ></iframe>
+      <div class="trailer-grid">
+        <div class="trailer-item">
+          <h3 class="trailer-label">Game trailer</h3>
+          <div class="trailer-wrap">
+            <video
+              controls
+              playsinline
+              preload="metadata"
+              title="Invasion of the Number Vegetables official trailer"
+            >
+              <source src="video/official-trailer.mp4" type="video/mp4">
+              Your browser does not support this video.
+              <a href="video/official-trailer.mp4">Download the trailer</a>
+            </video>
+          </div>
+        </div>
+        <div class="trailer-item">
+          <h3 class="trailer-label">They came for us (not gameplay)</h3>
+          <div class="trailer-wrap">
+            <video
+              controls
+              playsinline
+              preload="metadata"
+              title="They came for us (not gameplay)"
+            >
+              <source src="video/veg-game-short.mp4" type="video/mp4">
+              Your browser does not support this video.
+              <a href="video/veg-game-short.mp4">Download the short</a>
+            </video>
+          </div>
+        </div>
       </div>
-      <p class="section-note">
-        <a href="https://youtu.be/swQ1hmRX5po" target="_blank" rel="noopener noreferrer">Watch on YouTube</a>
-        ·
+      <p class="section-note trailer-foot">
         <a href="https://store.steampowered.com/app/4925430/" target="_blank" rel="noopener noreferrer">Wishlist on Steam</a>
       </p>
     </section>

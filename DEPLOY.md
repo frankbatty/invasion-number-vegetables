@@ -15,8 +15,13 @@ invasion-number-vegetables/
     screenshot-flight.jpg
     screenshot-cockpit.jpg
     (... other screenshot-*.jpg files)
+  video/
+    official-trailer.mp4
+    veg-game-short.mp4
   DEPLOY.md
 ```
+
+Upload the `video` folder too (both trailers play from the site as local MP4s).
 
 ## Step 1 — Create the repo on GitHub
 
@@ -37,6 +42,7 @@ On the empty repo page:
    - `styles.css`
    - `DEPLOY.md` (optional)
    - the whole `images` folder (with `hero.png`)
+   - the whole `video` folder (with `official-trailer.mp4` and `veg-game-short.mp4`)
 3. **Commit message:** e.g. `Add coming-soon landing page`
 4. Click **Commit changes**.
 
@@ -66,6 +72,11 @@ Use that URL in Steam’s **Website** field when you are ready.
 
 3. Remove `btn-disabled`, `aria-disabled`, and `tabindex="-1"` from that link.
 4. Update the “Coming soon” text in `.steam-note` if you like.
+
+## Trailer
+
+Embedded YouTube: `https://youtu.be/swQ1hmRX5po`  
+Section `#trailer` in `index.html`. To change the video, update the iframe `src` embed ID.
 
 ## Adding screenshots later
 
