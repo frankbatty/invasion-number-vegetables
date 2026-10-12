@@ -131,6 +131,12 @@ code {
   font-size: 0.95rem;
 }
 
+.steam-hint {
+  margin: 0.65rem 0 0;
+  color: var(--text-soft);
+  font-size: 0.9rem;
+}
+
 .steam-badge {
   display: inline-block;
   margin-right: 0.35rem;
